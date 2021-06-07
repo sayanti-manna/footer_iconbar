@@ -1,0 +1,88 @@
+﻿*{
+margin:0;
+padding:0;
+list-style:none
+}
+ 
+body{
+background:#262626;
+margin:300px
+}
+.icon ul li{
+position:relative;
+left:35%;
+width:75px;
+height:75px;
+line-height:75px;
+margin:0 15px;
+text-align:center;
+border-radius:50%;
+float:left;
+font-size:40px;
+color:#666;
+background:#000;
+cursor:pointer;
+transition:0.7s;
+}
+.icon ul li:before{
+position:absolute;
+content:'';
+left:0;
+top:0;
+height:100%;
+width:100%;
+border-radius:50%;
+z-index:-1;
+transform:scale(0.9);
+transition:0.7s;
+}
+.icon ul li:nth-child(1):before{
+background:#00ffff;
+}
+.icon ul li:nth-child(2):before{
+background:#ff0099;
+}
+.icon ul li:nth-child(3):before{
+background:#33ff00;
+}
+.icon ul li:nth-child(4):before{
+background:#ff0000;
+}
+
+.icon ul li:hover:before{
+transform:scale(1.2);
+filter:blur:20px;
+}
+.icon ul li:nth-child(1):before{
+box-shadow:0 0 20px #00ffff;
+}
+.icon ul li:nth-child(2):before{
+box-shadow:0 0 20px #ff0099;
+}
+.icon ul li:nth-child(3):before{
+box-shadow:0 0 20px #33ff00;
+}
+.icon ul li:nth-child(4):before{
+box-shadow:0 0 20px #ff0000;
+}
+
+.icon ul li:nth-child(1):hover{
+color:#66ccff;
+box-shadow:0 0 20px #00ffff;
+text-shadow:0 0 20px #00ffff;
+}
+.icon ul li:nth-child(2):hover{
+color:#ff66ff;
+box-shadow:0 0 20px #ff0099;
+text-shadow:0 0 20px #ff0099;
+}
+.icon ul li:nth-child(3):hover{
+color:#33ff66;
+box-shadow:0 0 20px #33ff00;
+text-shadow:0 0 20px #33ff00;
+}
+.icon ul li:nth-child(4):hover{
+color:#ff0033;
+box-shadow:0 0 20px #ff0000;
+text-shadow:0 0 20px #ff0000;
+}
